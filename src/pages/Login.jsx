@@ -6,26 +6,31 @@ const Login = () => {
   return (
     <div className="flex items-center justify-center min-h-screen bg-rose-50">
       <div className="relative flex flex-col m-6 space-y-10 bg-white shadow-2xl rounded-2xl md:flex-row md:space-y-0 md:m-0">
-
         <div className="p-6 md:p-20">
-
           <h2 className="font-mono mb-5 text-4xl font-bold"> Login </h2>
 
-          <p className="max-w sm mb-12 font-sans font-light text-gray-600">
+          <p className="max-w-sm mb-12 font-sans font-light text-gray-600">
             Log in to your account if you area employee.
           </p>
 
-          <Input placeholder={"Enter your email"} classes={'mb-4'} />
-          <Input placeholder={"Enter your password"} type={"password"} />
+          <Input
+            placeholder={"Enter your email"}
+            classes={"mb-4"}
+            name={"email"}
+          />
+          
+          <Input
+            placeholder={"Enter your password"}
+            type={"password"}
+            name={"password"}
+          />
 
           <div className="flex flex-col items-center justify-between mt-6 space-y-6 md:flex-row md:space-y-0">
-
             <div className="font-thing text-cyan-700">Forgot Password</div>
 
             <Button classes="bg-cyan-700 text-white px-10 w-auto">
               <span>Next</span>
               <svg
-                xmlns="http://www.w3.org/2000/svg"
                 className="w-7"
                 viewBox="0 0 24 24"
                 strokeWidth="1.5"
@@ -43,7 +48,6 @@ const Login = () => {
           </div>
 
           <hr className="mt-12 border-b border-b-gray-300" />
-
         </div>
 
         <img
@@ -51,7 +55,6 @@ const Login = () => {
           alt="image"
           className="w-[430px] hidden md:block"
         />
-
       </div>
     </div>
   );

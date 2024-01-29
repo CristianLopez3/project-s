@@ -1,24 +1,18 @@
-import React from "react";
-
 const Input = ({
-  classes, 
-  placeholder = null, 
+  classes = "",
+  placeholder = "...",
   name = null,
-  id = null,
-  value = null,
   type = "text",
-  props
- }) => {
-
+  ...props
+}) => {
   return (
     <input
       type={type}
       className={`basic-input ${classes}`}
-      placeholder={(placeholder !== null || placeholder !== '') ? placeholder : "..."}
+      placeholder={placeholder}
       {...props}
     />
   );
-
 };
 
 export default Input;
