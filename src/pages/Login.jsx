@@ -4,9 +4,13 @@ import Button from "../components/Button";
 
 const Login = () => {
   return (
+
     <div className="flex items-center justify-center min-h-screen bg-rose-50">
+      
       <div className="relative flex flex-col m-6 space-y-10 bg-white shadow-2xl rounded-2xl md:flex-row md:space-y-0 md:m-0">
+
         <div className="p-6 md:p-20">
+
           <h2 className="font-mono mb-5 text-4xl font-bold"> Login </h2>
 
           <p className="max-w-sm mb-12 font-sans font-light text-gray-600">
@@ -16,19 +20,26 @@ const Login = () => {
           <Input
             placeholder={"Enter your email"}
             classes={"mb-4"}
+            variant={"basic"}
             name={"email"}
+            className={'mb-6'}
           />
           
           <Input
             placeholder={"Enter your password"}
             type={"password"}
+            variant={"basic"}
             name={"password"}
           />
 
           <div className="flex flex-col items-center justify-between mt-6 space-y-6 md:flex-row md:space-y-0">
             <div className="font-thing text-cyan-700">Forgot Password</div>
 
-            <Button classes="bg-cyan-700 text-white px-10 w-auto">
+            <Button 
+            // classes="bg-cyan-700 text-white px-10 w-auto" 
+              type={'primary'} 
+              size={'md '}
+            >
               <span>Next</span>
               <svg
                 className="w-7"

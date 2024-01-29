@@ -1,14 +1,19 @@
+
+import { twMerge } from "tailwind-merge";
+import { InputVariant } from "../theme";
+
 const Input = ({
-  classes = "",
+  className = "",
   placeholder = "...",
   name = null,
   type = "text",
+  variant = "basic",
   ...props
 }) => {
   return (
     <input
       type={type}
-      className={`basic-input ${classes}`}
+      className={twMerge(InputVariant[variant], className)}
       placeholder={placeholder}
       {...props}
     />

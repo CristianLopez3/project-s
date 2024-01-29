@@ -5,5 +5,4 @@ In development...
 
 ### Links
 
-see the links to understand what i'm doing
-
+https://www.youtube.com/watch?v=8KdwwqHPLB4&list=PLKBvDYynKmlW1GrqNnwjdgoGP6PlYkxrh&index=45&ab_channel=GuillermoRodas
