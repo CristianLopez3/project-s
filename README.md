@@ -56,3 +56,6 @@ this will be the code:
 * hooks
 * props
 * destructuration
+
+>[!TIP]
+> when you are working with tailwindcss and react, you need to install postcss.
